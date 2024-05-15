@@ -4,7 +4,7 @@
 
 local opt = vim.opt
 
--- vim.cmd("let g:netrw_liststyle = 3")
+vim.cmd("let g:netrw_liststyle = 3")
 
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
@@ -56,4 +56,3 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 
 -- turn off swapfile
 opt.swapfile = false
-

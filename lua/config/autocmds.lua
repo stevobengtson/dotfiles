@@ -2,6 +2,7 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
+-- This will save a buffer silently
 local function save()
   local buf = vim.api.nvim_get_current_buf()
 
