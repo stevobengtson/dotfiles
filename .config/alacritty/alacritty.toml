@@ -19,8 +19,8 @@ blur = true
 option_as_alt = "Both"
 
 [font]
-normal.family = "MesloLGS Nerd Font Mono"
-size = 16
+normal.family = "JetBrainsMono Nerd Font Mono"
+size = 18
 
 [keyboard]
 bindings = [
