@@ -1,9 +1,26 @@
+-- return {
+--   {
+--     "folke/tokyonight.nvim",
+--     opts = {
+--       style = "moon",
+--     },
+--   },
+-- }
+--
 return {
   {
-    "folke/tokyonight.nvim",
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    ---@class CatppuccinOptions
     opts = {
-      style = "moon",
+      transparent_background = true,
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
     },
   },
 }
-

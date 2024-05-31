@@ -37,9 +37,10 @@ opt.background = "dark" -- colorschemes that can be light or dark will be made d
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
 -- Set fold level, so that folds are open when entering buffer
+-- opt.foldmethod="syntax"
 -- opt.foldcolumn = "1"
--- opt.foldlevel = 99
--- opt.foldlevelstart = 99
+opt.foldlevel = 99
+opt.foldlevelstart = 99
 -- vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
 -- Set eventignore so that tmux does not show `activity` every time we change from a window with Neovim
