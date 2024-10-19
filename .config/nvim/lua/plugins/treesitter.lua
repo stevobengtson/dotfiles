@@ -8,7 +8,13 @@ return {
         "php",
         "templ",
         "proto",
+        "ruby",
+        "javascript",
+        "typescript",
+        "json",
+        "yaml",
       },
     },
   },
+  { "tpope/vim-rails" },
 }
