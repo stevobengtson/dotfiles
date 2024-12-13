@@ -4,11 +4,11 @@ return {
     config = true,
     cmd = "ToggleTerm",
     keys = {
-      { "<C-t>", "<cmd>ToggleTerm<cr>", desc = "Toggle floating terminal" },
+      { "<F4>", "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
     },
     opts = {
-      open_mapping = [[<C-t>]],
-      direction = "float",
+      open_mapping = [[<F4>]],
+      direction = "vertical",
       shade_filetypes = {},
       hide_numbers = true,
       insert_mappings = true,

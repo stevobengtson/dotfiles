@@ -1,20 +1,28 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "http", -- For Rest-nvim
-        "graphql", -- For Rest-nvim
-        "php",
-        "templ",
-        "proto",
-        "ruby",
+    dependencies = { "RRethy/nvim-treesitter-endwise" },
+    opts = function(_, opts)
+      opts.endwise = { enable = true }
+      opts.indent = { enable = true, disable = { "yaml", "ruby" } }
+      opts.ensure_installed = {
+        "bash",
+        "embedded_template",
+        "html",
         "javascript",
-        "typescript",
         "json",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "query",
+        "regex",
+        "ruby",
+        "tsx",
+        "typescript",
+        "vim",
         "yaml",
-      },
-    },
+      }
+    end,
   },
-  { "tpope/vim-rails" },
 }
