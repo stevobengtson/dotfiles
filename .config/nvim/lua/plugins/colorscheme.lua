@@ -5,7 +5,11 @@ return {
     priority = 1000,
     ---@class CatppuccinOptions
     opts = {
-      transparent_background = false,
+      transparent_background = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
     },
   },
   {
