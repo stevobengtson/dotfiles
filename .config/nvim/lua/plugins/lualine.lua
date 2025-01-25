@@ -1,16 +1,8 @@
 return {
   {
     "nvim-lualine/lualine.nvim",
-    opts = {
-      sections = {
-        lualine_z = {
-          {
-            function()
-              return os.date("%a, %b %d - %I:%M %p")
-            end,
-          },
-        },
-      },
-    },
+    opts = function(_, opts)
+      opts.sections.lualine_z = {}
+    end,
   },
 }
