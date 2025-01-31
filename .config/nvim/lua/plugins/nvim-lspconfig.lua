@@ -1,3 +1,4 @@
+-- Add Ruby_lsp and rubocop for debugging and linting
 local lspconfig = require("lspconfig")
 
 return {
@@ -27,8 +28,6 @@ return {
         -- regols is not maanged by Mason. i install it with `brew install kitagry/tap/regols`.
         -- See: https://github.com/kitagry/regols
         regols = {},
-        -- This should be renamed to `ruby_lsp` once this PR gets merged
-        -- https://github.com/williamboman/mason-lspconfig.nvim/pull/395
         ruby_lsp = {
           -- cmd = { "bundle", "exec", "ruby-lsp" },
           -- init_options = {
@@ -36,7 +35,6 @@ return {
           -- },
         },
         rubocop = {
-          -- See: https://docs.rubocop.org/rubocop/usage/lsp.html
           cmd = { "bundle", "exec", "rubocop", "--lsp" },
           root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
         },
