@@ -18,5 +18,3 @@ size = 16
 [keyboard]
 bindings = [{ key = "Return", mods = "Alt", action = "ToggleFullscreen" }]
 
-[general]
-import = ["~/.config/alacritty/themes/themes/catppuccin.toml"]
