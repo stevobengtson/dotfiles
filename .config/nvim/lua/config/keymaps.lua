@@ -21,3 +21,7 @@ vim.keymap.set("n", "<leader>qd", function() require("persistence").stop() end)
 -- LazyDocker
 vim.keymap.set("n", "<leader>k", ":LazyDocker<cr>", { silent = true, noremap = true })
 
+-- Kulala
+-- vim.api.nvim_buf_set_keymap(0, "n", "<CR>", "<cmd>lua require('kulala').open()<cr>", { silent = true, noremap = true, desc = "Execute the request" })
+-- vim.api.nvim_buf_set_keymap(0, "n", "[", "<cmd>lua require('kulala').jump_prev()<cr>", { silent = true, noremap = true, desc = "Jump to the previous request" })
+-- vim.api.nvim_buf_set_keymap(0, "n", "[", "<cmd>lua require('kulala').jump_prev()<cr>", { silent = true, noremap = true, desc = "Jump to the next request" })
