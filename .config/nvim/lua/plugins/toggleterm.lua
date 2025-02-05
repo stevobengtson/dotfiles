@@ -8,7 +8,7 @@ return {
     },
     opts = {
       open_mapping = [[<C-t>]],
-      direction = "float",
+      direction = "horizontal",
       shade_filetypes = {},
       hide_numbers = true,
       insert_mappings = true,
