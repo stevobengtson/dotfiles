@@ -24,7 +24,7 @@ return {
           return {
             'bundle',
             'exec',
-            'rake',
+            'rails',
             'test',
           }
         end,
