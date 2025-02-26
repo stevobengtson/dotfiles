@@ -6,6 +6,19 @@
 vim.keymap.set("n", "<leader>cpd", ":Copilot disable<cr>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>cpe", ":Copilot enable<cr>", { silent = true, noremap = true })
 
+-- Make the leader a noop when not followed by something.
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>')
+
+-- Keeping the cursor centered.
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll downwards' })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll upwards' })
+vim.keymap.set('n', 'n', 'nzzzv', { desc = 'Next result' })
+vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'Previous result' })
+
+-- Indent while remaining in visual mode.
+vim.keymap.set('v', '<', '<gv')
+vim.keymap.set('v', '>', '>gv')
+
 -- load the session for the current directory
 vim.keymap.set("n", "<leader>qs", function() require("persistence").load() end)
 
@@ -20,6 +33,12 @@ vim.keymap.set("n", "<leader>qd", function() require("persistence").stop() end)
 
 -- LazyDocker
 vim.keymap.set("n", "<leader>k", ":LazyDocker<cr>", { silent = true, noremap = true })
+
+-- Clear search with <esc>
+vim.keymap.set('n', '<esc>', '<cmd>noh<cr><esc>', { desc = 'Escape and clear hlsearch' })
+
+-- HACK: <C-c> doesn't trigger the insert leave event, so remap it to escape so that it does.
+vim.keymap.set('i', '<C-c>', '<esc>')
 
 function _G.set_terminal_keymaps()
   local opts = { buffer = 0, silent = true, noremap = true }
