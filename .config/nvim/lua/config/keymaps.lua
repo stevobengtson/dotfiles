@@ -10,10 +10,10 @@ vim.keymap.set("n", "<leader>cpe", ":Copilot enable<cr>", { silent = true, norem
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>')
 
 -- Keeping the cursor centered.
-vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll downwards' })
-vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll upwards' })
-vim.keymap.set('n', 'n', 'nzzzv', { desc = 'Next result' })
-vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'Previous result' })
+-- vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll downwards' })
+-- vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll upwards' })
+-- vim.keymap.set('n', 'n', 'nzzzv', { desc = 'Next result' })
+-- vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'Previous result' })
 
 -- Indent while remaining in visual mode.
 vim.keymap.set('v', '<', '<gv')
