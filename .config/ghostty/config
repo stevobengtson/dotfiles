@@ -1,0 +1,5 @@
+theme = catppuccin-mocha.conf
+
+term = xterm-256color
+
+macos-option-as-alt = true
